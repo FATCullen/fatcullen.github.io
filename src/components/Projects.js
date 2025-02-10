@@ -31,6 +31,18 @@ export default function Projects() {
             <span className="px-3 py-1 bg-white rounded-full text-sm">MongoDB</span>
           </div>
         </div>
+        <div className="bg-gray-800 rounded-lg p-6">
+          <h2 className="text-xl font-semibold text-purple-400 mb-4">Project Name</h2>
+          <p className="text-gray-300 mb-4">
+            Description of the project, including your role, technologies used,
+            and key features implemented.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-white rounded-full text-sm">React</span>
+            <span className="px-3 py-1 bg-white rounded-full text-sm">Node.js</span>
+            <span className="px-3 py-1 bg-white rounded-full text-sm">MongoDB</span>
+          </div>
+        </div>
       </div>
     </div>
   );

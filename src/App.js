@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaFile } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import Resume from "./documents/Finn_Cullen_Resume.pdf";
+import ParticleBackground from "./components/ParticleBackground";
 
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -15,6 +16,10 @@ export default function App() {
   return (
     <Router>
       <div className="relative min-h-screen bg-gray-900">
+        <div className="fixed inset-0 z-0">
+          <ParticleBackground />
+        </div>
+        <div className="flex flex-col min-h-screen relative z-10">
         {/* Main content wrapper */}
         <div className="flex flex-col min-h-screen">
           {/* Navbar */}
@@ -82,6 +87,7 @@ export default function App() {
             </div>
           </footer>
         </div>
+      </div>
       </div>
     </Router>
   );
