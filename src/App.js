@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaFile } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
+import Resume from "./documents/Finn_Cullen_Resume.pdf";
+
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -65,9 +67,18 @@ export default function App() {
               <a href="https://www.linkedin.com/in/finn-cullen-a6a012346/" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
                 <FaLinkedin />
               </a>
-              <a href="https://github.com/fatcullen" target="_blank" rel="noopener noreferrer" className="text-gray-400 text-2xl hover:text-gray-300">
+              <a href="https://github.com/fatcullen" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
                 <FaGithub />
               </a>
+              <a href="mailto:fatcullen2@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
+                <FaEnvelope />
+              </a>
+              <a href={Resume} target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
+                <FaFile />
+              </a>
+              {/* <a href="https://github.com/fatcullen" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
+                <img src={SELogo} alt="Waterloo SE Webring Logo" className="w-8 h-8 fill-current" />
+              </a> */}
             </div>
           </footer>
         </div>
