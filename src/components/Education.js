@@ -1,22 +1,61 @@
 import React from 'react';
+import gns from "../images/gns.png";
+import waterloo from "../images/waterloo.png";
 
 export default function Education() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Education</h1>
-      
+
       <div className="space-y-8">
-        {/* Example Education Entry */}
-        <div className="bg-gray-800 rounded-lg p-6">
-          <div className="flex flex-col md:flex-row justify-between mb-4">
-            <h2 className="text-xl font-semibold text-blue-400">University Name</h2>
-            <span className="text-gray-400">2020 - 2024</span>
+        {/* University of Waterloo */}
+        <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
+          {/* Left Section: Text */}
+          <div className="flex-1 md:pr-6 text-center md:text-left">
+            <h2 className="text-xl font-semibold text-blue-400">University of Waterloo</h2>
+            <h2 className="text-xl font-semibold text-blue-400">2024 - 2029</h2>
+            <h3 className="text-lg text-gray-200 mb-2">Bachelors of Software Engineering</h3>
+            <p className="text-gray-300 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p className="text-gray-400">
+              <span className="font-semibold text-gray-300">GPA:</span> 4.0
+            </p>
           </div>
-          <h3 className="text-lg text-gray-200 mb-2">Degree Name</h3>
-          <p className="text-gray-300">
-            Relevant coursework and achievements go here. You can include GPA,
-            honors, or specific courses that showcase your expertise.
-          </p>
+
+          {/* Right Section: Image (Full width on mobile) */}
+          <div className="w-full md:w-1/5 mt-4 md:mt-0">
+            <img 
+              src={waterloo} 
+              alt="University of Waterloo Logo" 
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Glenlyon Norfolk School */}
+        <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
+          {/* Left Section: Text */}
+          <div className="flex-1 md:pr-6 text-center md:text-left">
+            <h2 className="text-xl font-semibold text-blue-400">Glenlyon Norfolk School</h2>
+            <h2 className="text-xl font-semibold text-blue-400">2020 - 2024</h2>
+            <h3 className="text-lg text-gray-200 mb-2">International Baccalaureate Program</h3>
+            <p className="text-gray-300 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p className="text-gray-400">
+              <span className="font-semibold text-gray-300">Final Grade:</span> 38 IB - 100% Average in STEM Subjects
+            </p>
+          </div>
+
+          {/* Right Section: Image (Full width on mobile) */}
+          <div className="w-full md:w-1/5 mt-4 md:mt-0">
+            <img 
+              src={gns} 
+              alt="Glenlyon Norfolk School Logo" 
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -81,7 +81,7 @@ export default function App() {
               <a href={Resume} target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
                 <FaFile />
               </a>
-              {/* <a href="https://github.com/fatcullen" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
+              {/* <a href="https://se-webring.xyz/" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-2xl hover:text-blue-300">
                 <img src={SELogo} alt="Waterloo SE Webring Logo" className="w-8 h-8 fill-current" />
               </a> */}
             </div>
@@ -120,13 +120,34 @@ function HomePage() {
           repeat={0}
         />
         <p className={`mt-4 text-base md:text-lg text-gray-300 max-w-md mx-auto md:mx-0 transition-opacity duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
-          A short about me section goes here. I am a developer passionate about building things.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel finibus neque, nec gravida ante. Cras laoreet nibh vel dui mattis malesuada. Suspendisse et rhoncus nisl, nec tincidunt massa. Nunc diam quam, tincidunt id velit cursus, efficitur sodales nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque mollis, felis nec bibendum tincidunt, mi nisi auctor arcu, sed tempor justo nulla ut metus.
         </p>
+  
+        {/* Buttons */}
         <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
           <Link to="/education" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Education</Link>
           <Link to="/experience" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Experience</Link>
           <Link to="/projects" className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Projects</Link>
           <Link to="/other" className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Other</Link>
+        </div>
+  
+        {/* Skills Section */}
+        <div className="mt-6 text-gray-300">
+          <h3 className="text-xl font-bold mb-2">Skills</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold">Languages</h4>
+              <p>JavaScript, Python, Java, HTML/CSS</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">Technologies/Frameworks</h4>
+              <p>React, Node.js, Django, Tailwind CSS</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">Other Skills</h4>
+              <p>Git & Version Control, Agile Methodology, UI/UX Design, Problem Solving</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="w-48 h-48 md:w-64 md:h-64 bg-gray-700 rounded-lg"></div>
