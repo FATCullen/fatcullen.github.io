@@ -108,7 +108,7 @@ export default function Other() {
             <p className="text-gray-300 mb-2">
               For the past 7 years I have been training and competing in Judo, and currently have my second degree black belt (Nidan).  
               Prior to moving to Ontario for school I was a Provincial A level competitor with Team BC, and a carded member of the Provincial development program.
-              I've had the opportunity to compete at a variety of competitions, including Canadian and US Nationals, as well as places as far away as Tahiti, England, Whales, and Switzerland.
+              I've had the opportunity to compete at a variety of competitions, including Canadian and US Nationals, as well as places as far away as Tahiti, England, Wales, and Switzerland.
               Currently I am training at Asahi Judo Club in Waterloo, and (when my classes don't interfere) I'm helping out at the Waterloo University Judo Club.
             </p>
           </div>
