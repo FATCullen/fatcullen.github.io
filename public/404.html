@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        // Redirect to the same path but using index.html for React Router to handle it
+        var path = window.location.pathname;
+        var newUrl = window.location.origin + "/index.html" + "?redirect=" + path;
+        window.location.replace(newUrl);
+    </script>
+</head>
+<body>
+</body>
+</html>
