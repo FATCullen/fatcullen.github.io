@@ -2,9 +2,11 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaEnvelope, FaFile } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
+import Favicon from "react-favicon";
 import Resume from "./documents/Finn_Cullen_Resume.pdf";
 import ParticleBackground from "./components/ParticleBackground";
 import me from "./images/me.jpg";
+import ico from "./favicon.ico";
 // import SELogo from "./images/logo_w.svg"
 
 import Education from "./components/Education";
@@ -20,6 +22,8 @@ export default function App() {
 
   return (
     <Router>
+      <Favicon url={ico} />
+
       <div className="relative min-h-screen bg-gray-900">
         <div className="fixed inset-0 z-0">
           <ParticleBackground />
@@ -45,6 +49,7 @@ export default function App() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-6 mr-6">
+              <Link to="/" className="text-lg text-white hover:text-gray-300">Home</Link>
               <Link to="/projects" className="text-lg text-white hover:text-gray-300">Projects</Link>
               <Link to="/experience" className="text-lg text-white hover:text-gray-300">Experience</Link>
               <Link to="/education" className="text-lg text-white hover:text-gray-300">Education</Link>
@@ -53,6 +58,7 @@ export default function App() {
 
             {/* Mobile Navigation */}
             <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:hidden absolute top-full left-0 right-0 flex-col bg-gray-800 p-4 shadow-lg`}>
+              <Link to="/" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Home</Link>
               <Link to="/projects" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Projects</Link>
               <Link to="/experience" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Experience</Link>
               <Link to="/education" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Education</Link>

@@ -271,7 +271,7 @@ export default function Projects() {
               {/* Demo & Source Links */}
               <div className="flex gap-4">
                 <a 
-                  href="https://github.com/FATCullen/personal_website" 
+                  href="https://fatcullen.github.io/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
@@ -279,7 +279,7 @@ export default function Projects() {
                   Demo
                 </a>
                 <a 
-                  href="https://github.com/FATCullen/personal_website" 
+                  href="https://github.com/FATCullen/fatcullen.github.io" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
