@@ -154,11 +154,11 @@ function HomePage() {
             </div>
             <div>
               <h4 className="font-semibold">Technologies/Frameworks</h4>
-              <p>HTML, React, Node.js, Django, Tailwind CSS, Latex, Git, Unity, SolidWorks, Docker, Bash, Linux</p>
+              <p>HTML, React, Node.js, AWS, Tailwind CSS, Latex, Git, Unity, OpenGL, SolidWorks, Docker, Bash, Linux</p>
             </div>
             <div>
               <h4 className="font-semibold">Other Skills</h4>
-              <p>Soldering, 3D Modeling, Circuit Design, Breadboarding, Engineering Schematic Creation, Agile Methodology, UI/UX Design, Problem Solving</p>
+              <p>Soldering, 3D Modeling, Circuit Design, Breadboarding, Engineering Schematic Creation, Agile Methodology, UI/UX Design</p>
             </div>
           </div>
         </div>
