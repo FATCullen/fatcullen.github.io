@@ -270,7 +270,7 @@ export default function Projects() {
               {/* Demo & Source Links */}
               <div className="flex gap-4">
                 <a 
-                  href="https://github.com/honzikschenk/debug-debacle" 
+                  href="https://github.com/FATCullen/personal_website" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
@@ -278,7 +278,7 @@ export default function Projects() {
                   Demo
                 </a>
                 <a 
-                  href="https://debug-debacle.vercel.app/" 
+                  href="https://github.com/FATCullen/personal_website" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
