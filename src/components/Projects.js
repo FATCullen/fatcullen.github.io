@@ -6,6 +6,7 @@ import breadboard from "../images/breadboard.png";
 import threeD from "../images/threeD.png";
 import utra from "../images/utra.png";
 import microbots from "../images/microbots.png";
+import website from "../images/website.png";
 
 export default function Projects() {
     return (
@@ -251,8 +252,8 @@ export default function Projects() {
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
             <img 
-              src={debacle} 
-              alt="Debug Debacle" 
+              src={website} 
+              alt="This Website" 
               className="w-full h-60 object-cover object-top"
             />
             
