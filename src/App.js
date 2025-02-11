@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import Resume from "./documents/Finn_Cullen_Resume.pdf";
 import ParticleBackground from "./components/ParticleBackground";
+import me from "./images/me.jpg";
 // import SELogo from "./images/logo_w.svg"
 
 import Education from "./components/Education";
@@ -156,7 +157,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-48 h-48 md:w-64 md:h-64 bg-gray-700 rounded-lg"></div>
+      <div className="w-48 h-48 md:w-64 md:h-64 bg-gray-700 rounded-lg"><img src={me} alt="Me" className="w-full h-auto object-contain" /></div>
     </div>
   );
 }
