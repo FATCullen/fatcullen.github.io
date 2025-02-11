@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import Resume from "./documents/Finn_Cullen_Resume.pdf";
 import ParticleBackground from "./components/ParticleBackground";
+// import SELogo from "./images/logo_w.svg"
 
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -12,6 +13,9 @@ import Other from "./components/Other";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    document.title = 'Finn Cullen';
+  }, []);
 
   return (
     <Router>
@@ -40,17 +44,17 @@ export default function App() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-6 mr-6">
-              <Link to="/education" className="text-lg text-white hover:text-gray-300">Education</Link>
-              <Link to="/experience" className="text-lg text-white hover:text-gray-300">Experience</Link>
               <Link to="/projects" className="text-lg text-white hover:text-gray-300">Projects</Link>
+              <Link to="/experience" className="text-lg text-white hover:text-gray-300">Experience</Link>
+              <Link to="/education" className="text-lg text-white hover:text-gray-300">Education</Link>
               <Link to="/other" className="text-lg text-white hover:text-gray-300">Other</Link>
             </div>
 
             {/* Mobile Navigation */}
             <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:hidden absolute top-full left-0 right-0 flex-col bg-gray-800 p-4 shadow-lg`}>
-              <Link to="/education" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Education</Link>
-              <Link to="/experience" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Experience</Link>
               <Link to="/projects" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Projects</Link>
+              <Link to="/experience" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Experience</Link>
+              <Link to="/education" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Education</Link>
               <Link to="/other" className="text-lg text-white py-2" onClick={() => setIsMenuOpen(false)}>Other</Link>
             </div>
           </nav>
@@ -59,9 +63,9 @@ export default function App() {
           <main className="flex-grow pt-20 px-4 md:px-6">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/education" element={<Education title="Education" />} />
-              <Route path="/experience" element={<Experience title="Experience" />} />
               <Route path="/projects" element={<Projects title="Projects" />} />
+              <Route path="/experience" element={<Experience title="Experience" />} />
+              <Route path="/education" element={<Education title="Education" />} />
               <Route path="/other" element={<Other title="Other" />} />
             </Routes>
           </main>
@@ -120,14 +124,16 @@ function HomePage() {
           repeat={0}
         />
         <p className={`mt-4 text-base md:text-lg text-gray-300 max-w-md mx-auto md:mx-0 transition-opacity duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel finibus neque, nec gravida ante. Cras laoreet nibh vel dui mattis malesuada. Suspendisse et rhoncus nisl, nec tincidunt massa. Nunc diam quam, tincidunt id velit cursus, efficitur sodales nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque mollis, felis nec bibendum tincidunt, mi nisi auctor arcu, sed tempor justo nulla ut metus.
+          I'm a first-year software engineering student at the Univeristy about Waterloo.  
+          I'm interested in all areas of programming, but especially firmware development, backend programming, and robotics.
+          Check out the rest of my website to learn more about me, my interests, and my work.
         </p>
   
         {/* Buttons */}
         <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-          <Link to="/education" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Education</Link>
-          <Link to="/experience" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Experience</Link>
           <Link to="/projects" className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Projects</Link>
+          <Link to="/experience" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Experience</Link>
+          <Link to="/education" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Education</Link>
           <Link to="/other" className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Other</Link>
         </div>
   
@@ -137,15 +143,15 @@ function HomePage() {
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold">Languages</h4>
-              <p>JavaScript, Python, Java, HTML/CSS</p>
+              <p>C#, Python, JS, CSS, C++, C, Assembly</p>
             </div>
             <div>
               <h4 className="font-semibold">Technologies/Frameworks</h4>
-              <p>React, Node.js, Django, Tailwind CSS</p>
+              <p>HTML, React, Node.js, Django, Tailwind CSS, Latex, Git, Unity, SolidWorks, Docker, Bash, Linux</p>
             </div>
             <div>
               <h4 className="font-semibold">Other Skills</h4>
-              <p>Git & Version Control, Agile Methodology, UI/UX Design, Problem Solving</p>
+              <p>Soldering, 3D Modeling, Circuit Design, Breadboarding, Engineering Schematic Creation, Agile Methodology, UI/UX Design, Problem Solving</p>
             </div>
           </div>
         </div>

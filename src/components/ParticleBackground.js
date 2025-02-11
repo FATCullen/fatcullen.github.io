@@ -26,7 +26,7 @@ const ParticlesBackground = () => {
               mode: "push",
             },
             onHover: {
-              enable: false,
+              enable: true,
               mode: "repulse",
             },
             resize: true,
@@ -49,7 +49,7 @@ const ParticlesBackground = () => {
             color: "#4B5563",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 1.0,
             width: 1,
           },
           collisions: {
@@ -73,7 +73,7 @@ const ParticlesBackground = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 1.0,
           },
           shape: {
             type: "circle",
