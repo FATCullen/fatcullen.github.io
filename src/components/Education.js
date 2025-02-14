@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyImage from './LazyImage';
+
 import gns from "../images/gns.png";
 import waterloo from "../images/waterloo.png";
 
@@ -22,7 +24,7 @@ export default function Education() {
 
           {/* Image */}
           <div className="w-full md:w-1/5 mt-4 md:mt-0">
-            <img 
+            <LazyImage 
               src={waterloo} 
               alt="University of Waterloo Logo" 
               className="w-full h-auto object-contain"
@@ -44,7 +46,7 @@ export default function Education() {
 
           {/* Image */}
           <div className="w-full md:w-1/5 mt-4 md:mt-0">
-            <img 
+            <LazyImage 
               src={gns} 
               alt="Glenlyon Norfolk School Logo" 
               className="w-full h-auto object-contain"

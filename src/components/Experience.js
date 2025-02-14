@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyImage from './LazyImage';
+
 import uwo from "../images/uwo.png";
 import mina from "../images/minaLogo.png";
 import horner from "../images/horner.png";
@@ -26,7 +28,7 @@ export default function Experience() {
               </ul>
             </div>
             <div className="w-full md:w-1/5 mt-4 md:mt-0">
-              <img src={uwo} alt="UW Orbital Mission Patch" className="w-full h-auto object-contain" />
+              <LazyImage src={uwo} alt="UW Orbital Mission Patch" className="w-full h-auto object-contain" />
             </div>
           </div>
         </div>
@@ -49,7 +51,7 @@ export default function Experience() {
               </ul>
             </div>
             <div className="w-full md:w-1/5 mt-4 md:mt-0">
-              <img src={mina} alt="Mina labs logo" className="w-full h-auto object-contain" />
+              <LazyImage src={mina} alt="Mina labs logo" className="w-full h-auto object-contain" />
             </div>
           </div>
         </div>
@@ -70,7 +72,7 @@ export default function Experience() {
               </ul>
             </div>
             <div className="w-full md:w-1/5 mt-4 md:mt-0">
-              <img src={horner} alt="Horner foundation logo" className="w-full h-auto object-contain" />
+              <LazyImage src={horner} alt="Horner foundation logo" className="w-full h-auto object-contain" />
             </div>
           </div>
         </div>

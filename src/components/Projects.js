@@ -1,3 +1,5 @@
+import LazyImage from './LazyImage';
+
 import React from 'react';
 import debacle from "../images/debacle.png";
 import fatchess from "../images/fatchess.png";
@@ -17,7 +19,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={debacle} 
               alt="Debug Debacle" 
               className="w-full h-60 object-cover object-top"
@@ -70,7 +72,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={pathMaxer} 
               alt="PathMaxer" 
               className="w-full h-60 object-cover object-top"
@@ -114,7 +116,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={fatchess} 
               alt="FATChess" 
               className="w-full h-60 object-cover object-top"
@@ -149,7 +151,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={breadboard} 
               alt="Breadboard Computers" 
               className="w-full h-60 object-cover object-top"
@@ -173,7 +175,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={threeD} 
               alt="3D Graphics Engine" 
               className="w-full h-60 object-cover object-top"
@@ -208,7 +210,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={utra} 
               alt="UTRA Hacks 2025 - Closed Challenge" 
               className="w-full h-60 object-cover object-top"
@@ -251,7 +253,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={website} 
               alt="This Website" 
               className="w-full h-60 object-cover object-top"
@@ -292,7 +294,7 @@ export default function Projects() {
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
-            <img 
+            <LazyImage 
               src={microbots} 
               alt="Omni-Directional Rover" 
               className="w-full h-60 object-cover object-top"

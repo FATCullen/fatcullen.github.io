@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import LazyImage from './LazyImage';
+
 import judo from "../images/judo.png";
 import chess from "../images/chess.png";
 
@@ -98,7 +100,7 @@ export default function Other() {
             </p>
           </div>
           <div className="w-full md:w-2/5 mt-4 md:mt-0">
-            <img src={judo} alt="Me doing Judo" className="w-full h-auto object-contain" />
+            <LazyImage src={judo} alt="Me doing Judo" className="w-full h-auto object-contain" />
           </div>
         </div>
 
@@ -114,7 +116,7 @@ export default function Other() {
             </p>
           </div>
           <div className="w-full md:w-2/5 mt-4 md:mt-0">
-            <img src={chess} alt="Chess board" className="w-full h-auto object-contain" />
+            <LazyImage src={chess} alt="Chess board" className="w-full h-auto object-contain" />
           </div>
         </div>
 
@@ -133,10 +135,10 @@ export default function Other() {
                 style={{ transform: `translateX(-${currentImage * 100}%)` }}
                 onTransitionEnd={handleTransitionEnd}
               >
-                {travelImages.map((img, index) => (
+                {travelImages.map((LazyImage, index) => (
                   <img 
                     key={index}
-                    src={img} 
+                    src={LazyImage} 
                     alt={travelCaptions[index]} 
                     className="w-full h-auto object-cover flex-shrink-0"
                   />
