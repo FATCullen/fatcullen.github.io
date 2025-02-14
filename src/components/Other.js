@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import judo from "../images/judo.png";
 import chess from "../images/chess.png";
-import uwo from "../images/uwo.png";
 
 import bad_sackingen from "../images/travel/bad_sackingen.jpg";
 import hawaii from "../images/travel/hawaii.jpg";
@@ -74,6 +73,7 @@ export default function Other() {
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Other</h1>
 
       <div className="space-y-8">
+          
           {/* FATCullen */}
          <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
           <div className="flex-1 md:pr-6 text-center md:text-left">
@@ -83,21 +83,6 @@ export default function Other() {
               To clear things up, FATCullen is just my initials.
               I'm pretty sure I first used it many years ago as my Minecraft account name, and it's been my username for everything else ever since.
             </p>
-          </div>
-        </div>
-
-         {/* UWO */}
-         <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
-          <div className="flex-1 md:pr-6 text-center md:text-left">
-            <h2 className="text-xl font-semibold text-white">UW Orbital</h2>
-            <p className="text-gray-300 mb-2">
-              I am a member of UWaterloo Orbital, my university's satellite design team.  
-              We're currently in the process of building our Cube Sat for CSDC 7.
-              I work on the firmware and groundstation subteams, and currently I am focusing on implementing doppler effect correction algorithms for LEO communications.
-            </p>
-          </div>
-          <div className="w-full md:w-2/5 mt-4 md:mt-0">
-            <img src={uwo} alt="Me doing Judo" className="w-full h-auto object-contain" />
           </div>
         </div>
 
@@ -174,7 +159,7 @@ export default function Other() {
                 </button>
               </div>
             </div>
-            {/* Caption below the image */}
+            {/* Caption */}
             <p className="text-center text-gray-300 mt-2">{travelCaptions[currentImage]}</p>
           </div>
         </div>

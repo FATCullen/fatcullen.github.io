@@ -10,7 +10,7 @@ export default function Education() {
       <div className="space-y-8">
         {/* University of Waterloo */}
         <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
-          {/* Left Section: Text */}
+          {/* Text */}
           <div className="flex-1 md:pr-6 text-center md:text-left">
             <h2 className="text-xl font-semibold text-blue-400">University of Waterloo</h2>
             <h2 className="text-xl font-semibold text-blue-400">2024 - 2029</h2>
@@ -20,7 +20,7 @@ export default function Education() {
             </p>
           </div>
 
-          {/* Right Section: Image (Full width on mobile) */}
+          {/* Image */}
           <div className="w-full md:w-1/5 mt-4 md:mt-0">
             <img 
               src={waterloo} 
@@ -32,7 +32,7 @@ export default function Education() {
 
         {/* Glenlyon Norfolk School */}
         <div className="bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
-          {/* Left Section: Text */}
+          {/* Text */}
           <div className="flex-1 md:pr-6 text-center md:text-left">
             <h2 className="text-xl font-semibold text-blue-400">Glenlyon Norfolk School</h2>
             <h2 className="text-xl font-semibold text-blue-400">2020 - 2024</h2>
@@ -42,7 +42,7 @@ export default function Education() {
             </p>
           </div>
 
-          {/* Right Section: Image (Full width on mobile) */}
+          {/* Image */}
           <div className="w-full md:w-1/5 mt-4 md:mt-0">
             <img 
               src={gns} 
