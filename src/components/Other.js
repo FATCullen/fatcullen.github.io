@@ -82,7 +82,7 @@ export default function Other() {
             <h2 className="text-xl font-semibold text-white">FATCullen</h2>
             <p className="text-gray-300 mb-2">
               I've gotten lots of questions about my go-to username "FATCullen," wondering about the meaning behind it.
-              To clear things up, FATCullen is just my initials.
+              To clear things up, FATCullen is just my initials (Finn Alexander Thomas Cullen).
               I'm pretty sure I first used it many years ago as my Minecraft account name, and it's been my username for everything else ever since.
             </p>
           </div>
