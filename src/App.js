@@ -26,8 +26,8 @@ export default function App() {
   return (
     <Router>
       <Favicon url={ico} />
-
       <div className="relative min-h-screen bg-gray-900">
+        {/* Interactive Background */}
         <div className="fixed inset-0 z-0">
           <ParticleBackground />
         </div>
