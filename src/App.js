@@ -9,13 +9,13 @@ import Resume from "./documents/Finn_Cullen_Resume.pdf";
 import ParticleBackground from "./components/ParticleBackground";
 import LazyImage from './components/LazyImage';
 
-import me from "./images/me.jpg";
-import ico from "./favicon.ico";
-
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Other from "./components/Other";
+
+import me from "./images/me.jpg";
+import ico from "./favicon.ico";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
