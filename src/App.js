@@ -155,7 +155,7 @@ function HomePage() {
         />
         <p className={`mt-4 text-base md:text-lg text-gray-300 max-w-md mx-auto md:mx-0 transition-opacity duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
           I'm a first-year software engineering student at the University of Waterloo.  
-          I'm interested in all areas of programming, but especially firmware development, backend programming, and robotics.
+          I'm interested in all areas of programming, but especially web-development and firmware programming.
           Check out the rest of my website to learn more about me, my interests, and my work.
         </p>
   
@@ -173,15 +173,15 @@ function HomePage() {
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold">Languages</h4>
-              <p>C#, Python, JS, CSS, C++, C, Assembly</p>
+              <p>Python, C#, JavaScript, TypeScript, CSS, C++, C, Lua, Bash, Assembly</p>
             </div>
             <div>
               <h4 className="font-semibold">Technologies/Frameworks</h4>
-              <p>HTML, React, Node.js, AWS, Tailwind CSS, Latex, Git, Unity, OpenGL, SolidWorks, Docker, Bash, Linux</p>
+              <p>React, Flask, AWS, Git, Docker, Unity, RobotOS, Expo, HTML, Latex, SolidWorks</p>
             </div>
             <div>
               <h4 className="font-semibold">Other Skills</h4>
-              <p>Soldering, 3D Modeling, Circuit Design, Breadboarding, Engineering Schematic Creation, Agile Methodology, UI/UX Design</p>
+              <p>UI/UX Design, Circuit Design, 3D Modeling, Engineering Schematic Creation, Soldering, Bread-Boarding</p>
             </div>
           </div>
         </div>
