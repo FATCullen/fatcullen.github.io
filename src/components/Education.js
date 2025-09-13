@@ -18,7 +18,7 @@ export default function Education() {
             <h2 className="text-xl font-semibold text-blue-400">2024 - 2029</h2>
             <h3 className="text-lg text-gray-200 mb-2">Bachelors of Software Engineering</h3>
             <p className="text-gray-400">
-              <span className="font-semibold text-gray-300">GPA:</span> 4.0
+              <span className="font-semibold text-gray-300">GPA:</span> 3.93
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Education() {
             <h2 className="text-xl font-semibold text-blue-400">2020 - 2024</h2>
             <h3 className="text-lg text-gray-200 mb-2">International Baccalaureate Program</h3>
             <p className="text-gray-400">
-              <span className="font-semibold text-gray-300">Final Grade:</span> 38 IB - 100% Average in STEM Subjects
+              <span className="font-semibold text-gray-300">Final Grade:</span> 38 IB - 99% Average in STEM Subjects - 95% Overall
             </p>
           </div>
 

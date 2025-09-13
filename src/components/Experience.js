@@ -4,6 +4,7 @@ import LazyImage from './LazyImage';
 import uwo from "../images/uwo.png";
 import mina from "../images/minaLogo.png";
 import horner from "../images/horner.png";
+import cavalry from "../images/cavalryFence.png";
 
 export default function Experience() {
   return (
@@ -11,6 +12,26 @@ export default function Experience() {
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Experience</h1>
       
       <div className="space-y-8">
+        {/* Cavalry Fence */}
+        <div className="bg-gray-800 rounded-lg p-6">
+          <div className="flex flex-col md:flex-row justify-between mb-4">
+            <h2 className="text-xl font-semibold text-green-400">Cavalry Fence - FenceSee - Edmonton, Alberta</h2>
+            <span className="text-gray-400">May 2025 - Present</span>
+          </div>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="flex-1 md:pr-6 text-center md:text-left">
+              <h3 className="text-lg text-gray-200 mb-2">Full Stack Software Developer</h3>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li>Independently developed and brought to production a web-based B2B service for planning fencing jobs, calculating material lists, formatting quotes, and receiving payments from homeowners</li>
+                <li>Front-end development in JavaScript with React, backend in Java with Spring</li>
+                <li>Integrated with Firebase, Mapbox GL, Stripe Connect, and Email services</li>
+              </ul>
+            </div>
+            <div className="w-full md:w-1/5 mt-4 md:mt-0">
+              <LazyImage src={cavalry} alt="Cavalry Fence Logo" className="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </div>
 
         {/* UWO */}
         <div className="bg-gray-800 rounded-lg p-6">
