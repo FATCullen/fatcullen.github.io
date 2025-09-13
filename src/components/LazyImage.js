@@ -30,7 +30,7 @@ const LazyImage = ({ src, alt, className }) => {
       <img 
         src={src} 
         alt={alt}
-        className={`${className} transition-opacity duration-300 ease-in-out ${
+        className={`${className} transition-opacity duration-300 ease-in-out rounded-[8px] ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
       />

@@ -125,7 +125,7 @@ export default function Other() {
           <div className="flex-1 md:pr-6 text-center md:text-left">
             <h2 className="text-xl font-semibold text-white">Travel Photos</h2>
             <p className="text-gray-300 mb-2">
-              Just a place to share some photos of the places I've been around the world.
+              Just a place to share some photos
             </p>
           </div>
           <div className="w-full md:w-2/5 mt-4 md:mt-0">

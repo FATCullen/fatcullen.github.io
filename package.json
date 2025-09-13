@@ -6,6 +6,7 @@
   "dependencies": {
     "cra-template": "1.2.0",
     "framer-motion": "^12.4.3",
+    "motion": "^12.23.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-favicon": "^2.0.7",

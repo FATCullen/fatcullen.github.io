@@ -8,6 +8,7 @@ import Favicon from "react-favicon";
 import Resume from "./documents/Finn_Cullen_Resume.pdf";
 import ParticleBackground from "./components/ParticleBackground";
 import LazyImage from './components/LazyImage';
+import TiltedCard from './components/TiltedCard';
 
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -160,7 +161,7 @@ function HomePage() {
         </p>
   
         {/* Buttons */}
-        <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+        <div className={`mt-6 flex flex-wrap gap-4 justify-center md:justify-start transition-opacity duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
           <Link to="/projects" className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Projects</Link>
           <Link to="/experience" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Experience</Link>
           <Link to="/education" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Education</Link>
@@ -168,7 +169,7 @@ function HomePage() {
         </div>
   
         {/* Skills Section */}
-        <div className="mt-6 text-gray-300">
+        <div className={`mt-6 text-gray-300 transition-opacity duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
           <h3 className="text-xl font-bold mb-2">Skills</h3>
           <div className="space-y-4">
             <div>
@@ -186,9 +187,18 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-48 h-48 md:w-64 md:h-64 bg-gray-700 rounded-lg">
-        <LazyImage src={me} alt="Me" className="w-full h-auto object-contain" />
-      </div>
+        {/* <LazyImage src={me} alt="Me" className="w-full h-auto object-contain" /> */}
+        <TiltedCard
+          imageSrc={me}
+          altText="Me"
+          containerHeight="360px"
+          containerWidth="360px"
+          imageHeight="360px"
+          imageWidth="360px"
+          rotateAmplitude={12}
+          scaleOnHover={1.2}
+          showTooltip={false}
+        />
     </div>
   );
 }
