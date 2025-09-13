@@ -9,7 +9,7 @@ import cavalry from "../images/cavalryFence.png";
 export default function Experience() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-white">Experience</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-green-400">Experience</h1>
       
       <div className="space-y-8">
         {/* Cavalry Fence */}
