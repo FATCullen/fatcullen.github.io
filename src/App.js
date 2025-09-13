@@ -7,7 +7,6 @@ import PageTransition from './components/PageTransition';
 import Favicon from "react-favicon";
 import Resume from "./documents/Finn_Cullen_Resume.pdf";
 import ParticleBackground from "./components/ParticleBackground";
-import LazyImage from './components/LazyImage';
 import TiltedCard from './components/TiltedCard';
 
 import Education from "./components/Education";
