@@ -187,18 +187,19 @@ function HomePage() {
           </div>
         </div>
       </div>
-        {/* <LazyImage src={me} alt="Me" className="w-full h-auto object-contain" /> */}
-        <TiltedCard
-          imageSrc={me}
-          altText="Me"
-          containerHeight="360px"
-          containerWidth="360px"
-          imageHeight="360px"
-          imageWidth="360px"
-          rotateAmplitude={12}
-          scaleOnHover={1.2}
-          showTooltip={false}
-        />
+        <div className={`duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
+          <TiltedCard
+            imageSrc={me}
+            altText="Me"
+            containerHeight="360px"
+            containerWidth="360px"
+            imageHeight="360px"
+            imageWidth="360px"
+            rotateAmplitude={12}
+            scaleOnHover={1.2}
+            showTooltip={false}
+          />
+        </div>
     </div>
   );
 }
