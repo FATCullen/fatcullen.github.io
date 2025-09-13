@@ -174,11 +174,11 @@ function HomePage() {
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold">Languages</h4>
-              <p>Python, C#, JavaScript, TypeScript, CSS, C++, C, Lua, Bash, Assembly</p>
+              <p>JavaScript, Java, Python, C, C++, C\#, TypeScript, CSS, HTML, Bash, Assembly</p>
             </div>
             <div>
               <h4 className="font-semibold">Technologies/Frameworks</h4>
-              <p>React, Flask, AWS, Git, Docker, Unity, RobotOS, Expo, HTML, Latex, SolidWorks</p>
+              <p>React, Spring, SQL, FastAPI, Git, Docker, Firebase, Flask, AWS, Unity, ROS, Latex, SolidWorks</p>
             </div>
             <div>
               <h4 className="font-semibold">Other Skills</h4>

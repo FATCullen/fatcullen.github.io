@@ -9,6 +9,8 @@ import threeD from "../images/threeD.png";
 import utra from "../images/utra.png";
 import microbots from "../images/microbots.png";
 import website from "../images/website.png";
+import fenceSee from "../images/fencesee.png";
+import thyone from "../images/thyone.png";
 
 export default function Projects() {
     return (
@@ -16,6 +18,44 @@ export default function Projects() {
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-purple-400">Projects</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div className="bg-gray-800 rounded-lg overflow-hidden">
+            {/* Project Image */}
+            <LazyImage 
+              src={fenceSee} 
+              alt="FenceSee" 
+              className="w-full h-60 object-cover object-top"
+            />
+            
+            {/* Project Content */}
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-purple-400 mb-4">FenceSee</h2>
+              <p className="text-gray-300 mb-4">
+              Web application for fencing companies to plan and manage jobs, calculate material lists, generate quotes, and receive payments.  
+              Built for Cavalry Fence.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-white rounded-full text-sm">React</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">Java</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">Spring</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">MySQL</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">Firebase</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">MapboxGL</span>
+              </div>
+
+              {/* Demo & Source Links */}
+              <div className="flex gap-4">
+                <a 
+                  href="https://app.fencesee.ca" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
 
           <div className="bg-gray-800 rounded-lg overflow-hidden">
             {/* Project Image */}
@@ -144,6 +184,41 @@ export default function Projects() {
                   className="text-blue-400 hover:underline"
                 >
                   Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-800 rounded-lg overflow-hidden">
+            {/* Project Image */}
+            <LazyImage 
+              src={thyone} 
+              alt="Thyone Consulting" 
+              className="w-full h-60 object-cover object-top"
+            />
+            
+            {/* Project Content */}
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-purple-400 mb-4">Thyone Consulting</h2>
+              <p className="text-gray-300 mb-4">
+              Freelance web design work for Thyone Consulting group, developing and deploying company website.  
+              Built in React and integrating a Headless CMS to allow client updates.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-white rounded-full text-sm">React</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">Tailwind CSS</span>
+                <span className="px-3 py-1 bg-white rounded-full text-sm">Headless CMS</span>
+              </div>
+
+              {/* Demo & Source Links */}
+              <div className="flex gap-4">
+                <a 
+                  href="https://thyoneconsulting.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Demo
                 </a>
               </div>
             </div>
