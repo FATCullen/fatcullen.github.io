@@ -154,7 +154,7 @@ function HomePage() {
           repeat={0}
         />
         <p className={`mt-4 text-base md:text-lg text-gray-300 max-w-md mx-auto md:mx-0 transition-opacity duration-1000 ${showParagraph ? 'opacity-100' : 'opacity-0'}`}>
-          I'm a first-year software engineering student at the University of Waterloo.  
+          I'm a second-year software engineering student at the University of Waterloo.  
           I'm interested in all areas of programming, but especially web-development and firmware programming.
           Check out the rest of my website to learn more about me, my interests, and my work.
         </p>
